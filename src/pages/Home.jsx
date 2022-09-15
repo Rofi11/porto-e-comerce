@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {link} from "react-router-dom"
 import Axios from 'axios';
-import {API_URL} from '../constants/API'
+import { axiosInstance } from '../configs/API';
 import ProductCard from '../componets/ProductCard';
 
 
@@ -20,7 +20,7 @@ class Home extends Component{
     // utk fecthing data/ request data
     fetchProducts = () => {
         //ambil data
-        Axios.get(`${API_URL}/products`)
+        axiosInstance.get("/products/")
         .then((result) => {
             this.setState({
                 productList : result.data,

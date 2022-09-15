@@ -6,12 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 //redux
 import {Provider} from "react-redux"
-import {createStore, applyMiddleware} from "redux"
-import ReduxThunk from "redux-thunk"
-import rootReducer from './redux/reducers/index'
-import thunk from 'redux-thunk';
+import { configureStore } from '@reduxjs/toolkit';
+import store from './redux/store'; // di ambil sari redux file store
 
-const store = createStore(rootReducer, applyMiddleware(thunk))
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
