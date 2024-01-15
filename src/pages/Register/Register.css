@@ -2,9 +2,9 @@
     background-image: linear-gradient(to right, rgb(64, 26, 233), rgb(160, 144, 234));
 }
 
-.form-login {
+.form-signUp {
     width: 500px;
-    height: 500px;
+    height: 700px;
     border: 0px solid rgba(107, 104, 104, 0.31);
     justify-content: center;
     padding: 18px;
@@ -18,6 +18,14 @@
     font-size: 20px;
     font-weight: 700;
     text-align: center;
+}
+
+#name {
+    margin-bottom: 5px;
+}
+
+#username {
+    margin-bottom: 5px;
 }
 
 /* .name-allice::before {
@@ -78,7 +86,7 @@
 }
 
 .form-username {
-    margin: 80px 0 15px 0;
+    margin: 40px 0 15px 0;
 }
 
 .form-username label {
@@ -89,18 +97,14 @@
 
 .form-password {
     margin-bottom: 25px;
-}
-
-.form-password .input {
-    /* border: 1px solid red; */
-    padding-right: 227px;
-    border: none;
     outline: none;
+    border: none;
 }
 
-/* .form-password span {
-    border: 1px solid black;
-} */
+.form-password #password {
+    margin-bottom: 15px;
+}
+
 
 .form-password label {
     font-size: 16px;
@@ -137,4 +141,21 @@ input[type="button"]:hover {
 
 .form-last a:hover {
     text-decoration: underline;
+}
+
+.checkBox #confirm {
+    margin-top: -18px;
+    margin-right: 7px;
+    justify-content: space-between;
+}
+
+.checkBox {
+    margin-bottom: 5px;
+}
+
+.back-login {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    /* border: 1px solid black; */
 }

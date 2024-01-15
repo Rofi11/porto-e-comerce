@@ -3,6 +3,7 @@ import {link} from "react-router-dom"
 import Axios from 'axios';
 import { axiosInstance } from '../configs/API';
 import ProductCard from '../componets/ProductCard';
+import MyNavBar from '../componets/MyNavbar';
 
 
 class Home extends Component{
@@ -20,7 +21,7 @@ class Home extends Component{
     // utk fecthing data/ request data
     fetchProducts = () => {
         //ambil data
-        axiosInstance.get("/products/")
+        axiosInstance.get("/users/products")
         .then((result) => {
             this.setState({
                 productList : result.data,
@@ -113,7 +114,8 @@ class Home extends Component{
 
     render() {
         return (
-            <div className='container mt-5'>
+            <div className='containerx'>
+                <MyNavBar/>
                 <div className="row">
                     <div className="col-3">
                         {/* card filter */}

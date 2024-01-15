@@ -1,126 +1,177 @@
 {
-    "products": [
-            {
-        "id": 1,
-        "productName": "zigzag Hitam Polos",
-        "price": 15000,
-        "productImage": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/2/23/d074cdb2-5958-4149-b59a-a263f2ff6802.jpg",
-        "description": "ini barang bagus loh",
-        "category": "kaos"
+  "products": [
+    {
+      "id": 1,
+      "productName": "zigzag Hitam Polos",
+      "price": 15000,
+      "productImage": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/2/23/d074cdb2-5958-4149-b59a-a263f2ff6802.jpg",
+      "description": "baju hitam zigzag berkualitas aabb",
+      "category": "kaos"
+    },
+    {
+      "id": 2,
+      "productName": "Kaos putih keren",
+      "price": 30000,
+      "productImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6TPWhteEdVEJoRojpTvvneZEGOqaczdgZmQ&usqp=CAU",
+      "description": "ini barang bagus banget loh",
+      "category": "kaos"
+    },
+    {
+      "id": 3,
+      "productName": "Kaos merah Polos",
+      "price": 22000,
+      "productImage": "https://2.bp.blogspot.com/-rol0UR81JJ8/W_1TsDEjY-I/AAAAAAAAAOE/zeP2GQGhCCEjK5OzrFaaEh2_jqkb0TrKgCEwYBhgL/s1600/-jualbajukaoslenganpanjang-grosirkaoswanitalenganpanjang-bajukemejawanitalenganpanjang-jualkaoslenganpanjangpria-modelkaoslenganpanjangpria-kaospanjangpolos-modelbajukaoslenganpanjang-onlineshopbajuwanitalenganpanj.jpg",
+      "description": "baju merah merona dan bagus",
+      "category": "kaos"
+    },
+    {
+      "id": 4,
+      "productName": "baju putih keren",
+      "price": 35000,
+      "productImage": "https://s3.bukalapak.com/img/8709195756/w-1000/18471874_B.jpg",
+      "description": "baju putih polos yang nyaman dan adem di pakai",
+      "category": "kaos"
+    },
+    {
+      "id": 5,
+      "productName": "Kaos Hitam Polos",
+      "price": 27000,
+      "productImage": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/2/23/d074cdb2-5958-4149-b59a-a263f2ff6802.jpg",
+      "description": "ini barang bagus loh",
+      "category": "kaos"
+    },
+    {
+      "id": 6,
+      "productName": "Kaos putih keren",
+      "price": 40000,
+      "productImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6TPWhteEdVEJoRojpTvvneZEGOqaczdgZmQ&usqp=CAU",
+      "description": "ini barang bagus banget loh",
+      "category": "kaos"
+    },
+    {
+      "id": 7,
+      "productName": "baju Hitam Polos",
+      "price": 25000,
+      "productImage": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/2/23/d074cdb2-5958-4149-b59a-a263f2ff6802.jpg",
+      "description": "ini barang bagus loh",
+      "category": "kaos"
+    },
+    {
+      "id": 8,
+      "productName": "kemeja putih polos keren",
+      "price": "125000",
+      "productImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6TPWhteEdVEJoRojpTvvneZEGOqaczdgZmQ&usqp=CAU",
+      "description": "barang nyaman dan adem digunakan",
+      "category": "kaos"
+    },
+    {
+      "id": 9,
+      "productName": "Celana Hitam Polos",
+      "price": 155000,
+      "productImage": "https://www.herworld.co.id/gallery/images/cargo-pants.jpg",
+      "description": "ini barang bagus loh",
+      "category": "celana"
+    },
+    {
+      "id": 10,
+      "productName": "Celana putih keren",
+      "price": 30000,
+      "productImage": "https://www.adidas.co.id/media/catalog/product/cache/3bec5fdb79d91223b1a151be2b21ce8d/h/l/hl9309_fc_ecom.jpg",
+      "description": "ini barang bagus banget loh",
+      "category": "celana"
+    },
+    {
+      "id": 11,
+      "productName": "Hat Hitam Polos",
+      "price": 25000,
+      "productImage": "https://assets.hermes.com/is/image/hermesproduct/funk-hat--212060N%2001-front-1-300-0-1000-1000_b.jpg",
+      "description": "ini barang bagus loh",
+      "category": "aksesoris"
+    },
+    {
+      "id": 12,
+      "productName": "Hat putih keren",
+      "price": 30000,
+      "productImage": "https://q8y9x5z7.rocketcdn.me/wp-content/uploads/2020/05/web-adventurer-sand-rollable-mens-panama-hat-sun-pachacuti-002-category-v2.jpg",
+      "description": "ini barang bagus banget loh",
+      "category": "aksesoris"
+    },
+    {
+      "productName": "Black jeans uniqlo",
+      "price": 450000,
+      "productImage": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/444583/item/idgoods_68_444583.jpg?width=1008&impolicy=quality_75",
+      "description": "barang uniqlo jenas yg elegan dan nyaman digunakan",
+      "category": "celana",
+      "id": 13
+    },
+    {
+      "productName": "Dark skinny jeans",
+      "price": 475000,
+      "productImage": "https://dynamic.zacdn.com/34JsxFV1SHI4zwfzNrbVcEnuVVI=/fit-in/346x500/filters:quality(90):fill(ffffff)/https://static-id.zacdn.com/p/tripl3-jeans-6981-3023162-1.jpg",
+      "description": "dark skinny jens model terbaru",
+      "category": "celana",
+      "id": 14
+    }
+  ],
+  "users": [
+    {
+      "fullname": "Muhammad Rofi",
+      "username": "Rocky",
+      "email": "rofimuhamad0381@gmail.com",
+      "password": "password",
+      "role": "admin",
+      "fotoProfile": "https://www.herworld.co.id/gallery/images/cargo-pants.jpg",
+      "id": 1,
+      "fullName": "Muhammad Rofi",
+      "bio": "nice try"
+    },
+    {
+      "email": "bimo@gmail.com",
+      "fullname": "bimo pp",
+      "password": "Akukira123!",
+      "role": "users",
+      "username": "bimo",
+      "fotoProfile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgthcMPH7ziA86bFjM_IqMBPXwtulO0S_nkQ&usqp=CAU",
+      "id": 2
+    }
+  ],
+  "carts": [
+    {
+      "userId": 1,
+      "productId": 3,
+      "price": 22000,
+      "productName": "Kaos merah Polos",
+      "productImage": "https://2.bp.blogspot.com/-rol0UR81JJ8/W_1TsDEjY-I/AAAAAAAAAOE/zeP2GQGhCCEjK5OzrFaaEh2_jqkb0TrKgCEwYBhgL/s1600/-jualbajukaoslenganpanjang-grosirkaoswanitalenganpanjang-bajukemejawanitalenganpanjang-jualkaoslenganpanjangpria-modelkaoslenganpanjangpria-kaospanjangpolos-modelbajukaoslenganpanjang-onlineshopbajuwanitalenganpanj.jpg",
+      "quantity": 1,
+      "id": 1
+    }
+  ],
+  "transactions": [
+    {
+      "address": "cimahi",
+      "recipientName": "steven",
+      "totalPrice": 47250,
+      "totalPayment": 50000,
+      "transactionDate": "21-9-2022",
+      "transactionItem": [
+        {
+          "productId": 2,
+          "price": 30000,
+          "productName": "Kaos putih keren",
+          "productImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6TPWhteEdVEJoRojpTvvneZEGOqaczdgZmQ&usqp=CAU",
+          "quantity": 1,
+          "id": 4
         },
         {
-        "id": 2,
-        "productName": "Kaos putih keren",
-        "price": 30000,
-        "productImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6TPWhteEdVEJoRojpTvvneZEGOqaczdgZmQ&usqp=CAU",
-        "description": "ini barang bagus banget loh",
-        "category": "kaos"
-        },
-        {
-        "id": 3,
-        "productName": "Kaos merah Polos",
-        "price": 22000,
-        "productImage": "https://2.bp.blogspot.com/-rol0UR81JJ8/W_1TsDEjY-I/AAAAAAAAAOE/zeP2GQGhCCEjK5OzrFaaEh2_jqkb0TrKgCEwYBhgL/s1600/-jualbajukaoslenganpanjang-grosirkaoswanitalenganpanjang-bajukemejawanitalenganpanjang-jualkaoslenganpanjangpria-modelkaoslenganpanjangpria-kaospanjangpolos-modelbajukaoslenganpanjang-onlineshopbajuwanitalenganpanj.jpg",
-        "description": "baju merah merona dan bagus",
-        "category": "kaos"
-        },
-        {
-        "id": 4,
-        "productName": "baju putih keren",
-        "price": 35000,
-        "productImage": "https://s3.bukalapak.com/img/8709195756/w-1000/18471874_B.jpg",
-        "description": "baju putih polos yang nyaman dan adem di pakai",
-        "category": "kaos"
-        },
-        {
-        "id": 5,
-        "productName": "Kaos Hitam Polos",
-        "price": 27000,
-        "productImage": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/2/23/d074cdb2-5958-4149-b59a-a263f2ff6802.jpg",
-        "description": "ini barang bagus loh",
-        "category": "kaos"
-        },
-        {
-        "id": 6,
-        "productName": "Kaos putih keren",
-        "price": 40000,
-        "productImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6TPWhteEdVEJoRojpTvvneZEGOqaczdgZmQ&usqp=CAU",
-        "description": "ini barang bagus banget loh",
-        "category": "kaos"
-        },
-        {
-        "id": 7,
-        "productName": "baju Hitam Polos",
-        "price": 25000,
-        "productImage": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/2/23/d074cdb2-5958-4149-b59a-a263f2ff6802.jpg",
-        "description": "ini barang bagus loh",
-        "category": "kaos"
-        },
-        {
-        "id": 8,
-        "productName": "kemeja putih polos keren",
-        "price": "125000",
-        "productImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6TPWhteEdVEJoRojpTvvneZEGOqaczdgZmQ&usqp=CAU",
-        "description": "barang nyaman dan adem digunakan",
-        "category": "kaos"
-        },
-        {
-        "id": 9,
-        "productName": "Celana Hitam Polos",
-        "price": 155000,
-        "productImage": "https://www.herworld.co.id/gallery/images/cargo-pants.jpg",
-        "description": "ini barang bagus loh",
-        "category": "celana"
-        },
-        {
-        "id": 10,
-        "productName": "Celana putih keren",
-        "price": 30000,
-        "productImage": "https://www.adidas.co.id/media/catalog/product/cache/3bec5fdb79d91223b1a151be2b21ce8d/h/l/hl9309_fc_ecom.jpg",
-        "description": "ini barang bagus banget loh",
-        "category": "celana"
-        },
-        {
-        "id": 11,
-        "productName": "Hat Hitam Polos",
-        "price": 25000,
-        "productImage": "https://assets.hermes.com/is/image/hermesproduct/funk-hat--212060N%2001-front-1-300-0-1000-1000_b.jpg",
-        "description": "ini barang bagus loh",
-        "category": "aksesoris"
-        },
-        {
-        "id": 12,
-        "productName": "Hat putih keren",
-        "price": 30000,
-        "productImage": "https://q8y9x5z7.rocketcdn.me/wp-content/uploads/2020/05/web-adventurer-sand-rollable-mens-panama-hat-sun-pachacuti-002-category-v2.jpg",
-        "description": "ini barang bagus banget loh",
-        "category": "aksesoris"
-        },
-        {
-        "productName": "Black jeans uniqlo",
-        "price": 450000,
-        "productImage": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/444583/item/idgoods_68_444583.jpg?width=1008&impolicy=quality_75",
-        "description": "barang uniqlo jenas yg elegan dan nyaman digunakan",
-        "category": "celana",
-        "id": 13
-        },
-        {
-        "productName": "Dark skinny jeans",
-        "price": 475000,
-        "productImage": "https://dynamic.zacdn.com/34JsxFV1SHI4zwfzNrbVcEnuVVI=/fit-in/346x500/filters:quality(90):fill(ffffff)/https://static-id.zacdn.com/p/tripl3-jeans-6981-3023162-1.jpg",
-        "description": "dark skinny jens model terbaru",
-        "category": "celana",
-        "id": 14
+          "productId": 1,
+          "price": 15000,
+          "productName": "zigzag Hitam Polos",
+          "productImage": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/2/23/d074cdb2-5958-4149-b59a-a263f2ff6802.jpg",
+          "quantity": 1,
+          "id": 5
         }
-    ],
-    "users": [
-        {
-        "fullName": "Muhammad Rofi",
-        "username": "Rocky",
-        "email": "rofimuhamad0381@gmail.com",
-        "password": "password",
-        "role": "user",
-        "id": 1
-        }
-    ]
+      ],
+      "id": 1
+    }
+  ]
 }

@@ -4,10 +4,12 @@ import { configureStore } from "@reduxjs/toolkit"
 // redux-thunk utk middleware nya
 import thunk from "redux-thunk"
 import authReducer from "./reducers/Auth"
+import cartReducer from "./reducers/Cart"
 
 //buat combine reducer nya
 const rootReducer = combineReducers({
-    auth : authReducer
+    auth : authReducer,
+    cart : cartReducer
 })
 
 // membuat store nya di sini buka lagi di index.js src nanti tinggal export saja ke index.js, jadi akan bisa punya sifat inheritance

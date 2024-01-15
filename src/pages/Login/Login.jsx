@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import "bootstrap/dist/css/bootstrap.css"
 import {Link, useNavigate} from 'react-router-dom'
 import { useDispatch, useSelector} from 'react-redux' 
-
 import { useState } from "react";
 import { useEffect } from "react";
 import { axiosInstance} from "../../configs/API";
@@ -15,6 +14,9 @@ import YupPassword from "yup-password"
 //js cookie
 import jsCookie from "js-cookie"
 import { login, logOut } from "../../redux/actions/auth_action";
+import { Icon } from 'react-icons-kit'
+import {view_off} from 'react-icons-kit/ikons/view_off'
+import {view} from 'react-icons-kit/ikons/view'
 
 function Login () {
     // configure yup
@@ -22,7 +24,19 @@ function Login () {
 
     const [inputEmail, setUsername] = useState("")
     const [inputPassword , setPassword] = useState("")
+    const [type, setType] = useState("password")
+    const [icon, setIcon] = useState (view_off)
     let nav = useNavigate()
+
+    const handleToggle = () => {
+        if(type === "password"){
+            setIcon(view)
+            setType("text")
+        } else {
+            setIcon(view_off)
+            setType("password")
+        }
+    }
 
     const authSelector = useSelector((state) => state.auth) // ambil global state
 
@@ -42,12 +56,12 @@ function Login () {
     //initiallition
     const formik = useFormik ({
         initialValues : {
-            email : "",
-            password : ""
+            user_email : "",
+            password : "",
         },
         validationSchema: Yup.object().shape({
-            email: Yup.string().required("harap isi email").email("format yg dimasukan bukan email"),
-            password : Yup.string().required("harap isi password")
+            user_email: Yup.string().required("harap isi email"),
+            password : Yup.string().required("harap isi password"),
             // noted utk nanti register ==> dari Yup-password
             //  .minLowercase(1, 'password must contain at least 1 lower case letter')
             // .minUppercase(1, 'password must contain at least 1 upper case letter')
@@ -55,7 +69,7 @@ function Login () {
             // .minSymbols(1, 'password must contain at least 1 special character')
         }) ,
         validateOnChange : false, // ini utk onChange, menvalidasi setiap ada perubahan di onchange
-        onSubmit: (values) => {
+        onSubmit:(values) => {
             // alert(values.email)
             // alert(values.password)
 
@@ -64,14 +78,6 @@ function Login () {
             nav("/home")
         }
     })
-
-    function logOut () {
-        jsCookie.remove ("user_data")
-
-        dispatch({
-            type : auth_types.Logout
-        })
-    }
 
     return (
         <div className="container-utama d-flex">
@@ -90,25 +96,30 @@ function Login () {
                         <div className="name">Sign in to Allice</div>
                         <div className="form-username d-flex flex-column">
                             {/* simpen formik kalo salah */}
-                                <div>{formik.errors.email}</div>
-                            <label htmlFor="email">email</label>
+                                {formik.errors.email ? <div className="alert alert-danger">{formik.errors.email}</div> : null}
+                            <label htmlFor="email">email or username</label>
                             <input
                             name="email" 
                             // onChange={(e) => inputHandler(e, "email")} 
                             //formik validation
-                            onChange={(event) => formik.setFieldValue("email", event.target.value)}
+                            onChange={(event) => formik.setFieldValue("user_email", event.target.value)}
                             type="text"  
                             />
                         </div>
-                            <div className="form-password d-flex flex-column">
-                                <div>{formik.errors.password}</div>
+                        <div className="form-password d-flex flex-column">
+                                {formik.errors.password ? <div className="alert alert-danger">{formik.errors.password}</div> : null}
                             <label htmlFor="password">Password</label>
-                            <input name="password"
-                            // onChange={(e) => inputHandler(e, "password")} 
-                            //formik validation
-                            onChange={(event) => formik.setFieldValue("password", event.target.value)}
-                            type="password"
-                            />
+                            <div className="border border-dark">
+                                <input name="password"
+                                className="input"
+                                // onChange={(e) => inputHandler(e, "password")} 
+                                //formik validation
+                                onChange={(event) => formik.setFieldValue("password", event.target.value)}
+                                type={type}
+                                />
+                                <span onClick={handleToggle}><Icon icon={icon} size={25}/></span>
+
+                            </div>
                         </div>
 
                         <input 
@@ -120,11 +131,11 @@ function Login () {
 
                         <div className="form-last d-flex flex-row justify-content-between">
                             <a href="#">Forgot Password?</a>
-                            <Link to="/SignUp">Sign Up</Link>
+                            <Link to="/register">Sign Up</Link>
                         </div>
 
                         {/* muncull button log-out kalo sudah login */}
-                        {
+                        {/* {
                             authSelector?.email ?
                         <div className="d-grid mt-3">
                             <button type="submit" className="btn btn-primary" 
@@ -136,8 +147,7 @@ function Login () {
                             </button>
                         </div>
                         : null
-
-                        }
+                        } */}
                     </div>
                 </div>
             </div>
